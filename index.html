@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwa Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./favicon.66939c1c.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- <div class="fixed center top-0 left-0 h-screen w-full bg-black z-[99999]">
+    <svg class="w-full h-full center  ">
+      <circle
+        class="circle"
+        cx="50%"
+        cy="50%"
+        r="25%"
+        stroke="#231f20"
+        stroke-width="3"
+        fill-opacity="0"
+      />
+    </svg>
+  </div> -->
+  <body>
+    <audio src="./kk.mp3" autoplay loop></audio>
+    <div
+      class="w-full h-[100vh] overflow-hidden relative flex flex-col items-center text-center justify-center bg-[#FFDDE6]"
+    >
+      <p
+        class="text text-[7vw] leading-3 font-bold translate-y-[-15vh] text-[#EF99B1]"
+      >
+        ANNABATHUNI
+      </p>
+      <p class="text text-[5vw] font-bold translate-y-[-16vh] text-[#EF99B1]">
+        VENKATA SAI VISWANADH
+      </p>
+      <canvas
+        class="fixed brightness-[1.1] contrast-[2] bottom-20 z-[999]"
+        id="canvas"
+        width="300"
+        height="300"
+      >
+      </canvas>
+      <div
+        id="colorchange"
+        class="fixed h-20 w-20 bottom-40 rounded-full z-[9999] cursor-pointer"
+      ></div>
+      <div class="w-[80%] h-1 bg-[#0000003d] bottom-[10.5vh] absolute"></div>
+      <div id="frame" class="">
+        <a href="profile.html">
+          <img
+            class="absolute top-[12%] left-[10%] w-[16%] tilt-animation"
+            src="./IMG_7888.PNG"
+            alt=""
+          />
+        </a>
+      </div>
+      <div id="table" class="  ">
+        <img
+          class="absolute bottom-[6%] left-[10%] w-[30%]"
+          src="./IMG_7889.PNG"
+          alt=""
+        />
+      </div>
+      <img
+        id="guitar"
+        class="absolute bottom-[6%] right-[14%] w-[25%]"
+        src="./IMG_7890.PNG"
+        alt=""
+      />
+      <img
+        id="shelf"
+        class="absolute top-[5%] right-[10%] w-[15%]"
+        src="./IMG_7886.PNG"
+        alt=""
+      />
+      <img
+        id="certificates"
+        class="absolute top-[20%] right-[5%] w-[18%]"
+        src="./IMG_7887.PNG"
+        alt=""
+      />
+      <div
+        class="w-[14vw] h-20 z-[99999] p-2 absolute flex items-center justify-center text-center text-xl font-bold translate-y-[-5vh]"
+      >
+        <p id="text">Hello</p>
+      </div>
+      <div
+        id="workdiv"
+        class="w-full h-full overflow-x-hidden  absolute z-9 gap-2 rounded-tr-[50%] rounded-tl-[50%] top-[100%] overflow-scroll p-10 bg-[#EF99B1]"
+      >
+        <div
+          id="close"
+          class="h-10 w-10 bg-white text-black text-2xl flex items-center justify-center rounded-full"
+        >
+          <i class="ri-close-line"></i>
+        </div>
+        <br />
+        <div class="w-full grid grid-cols-3 gap-3">
+          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+            <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/AUSS2024 CERTIFICATE _page-0001.jpg"
+            ></img>
+          </div>
+          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+            <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/BADMINTON ALLEN _page-0001.jpg"
+            ></img>
+          </div>
+          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+            <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/Certificate of Appreciation Vikara.pdf_page-0001.jpg"
+            ></img>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="h-[49vh] rounded-xl w-[65vh] overflow-hidden">
+              <img
+                loop
+                autoplay
+                muted
+                class="w-full h-full object-cover"
+                src="./certificates/SBP ALLEN_page-0001.jpg"
+              ></img>
+            </div>
+            <div class="h-[49vh] rounded-xl w-[65vh] overflow-hidden">
+              <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/VIKARA AWARD_page-0001.jpg"                                                                                                            
+            ></img>
+          </div>
+          </div>
+          <div class="h-[100vh] rounded-xl w-[65vh] overflow-hidden">
+            <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/SSR CONCRETE INTERNSHIP CERTIFICATE _page-0001.jpg"
+            ></img>
+          </div>
+          <div class="h-[100vh] rounded-xl w-[65vh] overflow-hidden">
+            <img
+              loop
+              autoplay
+              muted
+              class="w-full h-full object-cover"
+              src="./certificates/VSE INTERNSHIP CERTIFICATE _page-0001.jpg"
+              ></img>
+            </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+    <script>
+      var r; // Define `r` in a higher scope to make it accessible in both event listeners
+      var text = document.getElementById("text");
+      document.addEventListener("DOMContentLoaded", (event) => {
+        r = new rive.Rive({
+          src: "./cat.riv",
+          canvas: document.getElementById("canvas"),
+          autoplay: true,
+          animations: [
+            "idle",
+            "spark on",
+            "bubble about",
+            "bubble on",
+            "blink",
+            "shirt nintendo",
+          ], // Ensure this is an array if specifying multiple animations
+          onLoad: () => {
+            r.resizeDrawingSurfaceToCanvas();
+            text.innerHTML = "Hello !!";
+
+          },
+        });
+      });
+
+      document
+        .querySelector("#frame")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "bubble about",
+              "bubble on",
+              "hand right old",
+              "mouth smile",
+              "eyes uwu",
+              "eyebrows chill",
+            ]);
+            
+            text.innerHTML = "Learn More <br> About Me";
+
+          }
+        });
+      document
+        .querySelector("#frame")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth off",
+              "eyes default",
+              "eyebrows none",
+   
+            ]);
+            text.innerHTML = "I Am  <br> Feeling Good";
+          
+          }
+        });
+      document
+        .querySelector("#table")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "hands up both",
+              "mouth big smile",
+              "eyebrows chill",
+              "bubble shirt",
+              "bubble on",
+            ]);
+            text.innerHTML = "Check Out <br> My ECS";
+
+          }
+        });
+      document
+        .querySelector("#table")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyebrows none",
+            
+            ]);
+            text.innerHTML = "Tell me <br> About Yourself";
+
+          }
+        });
+      document
+        .querySelector("#guitar")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "hands up both",
+              "mouth uwu default",
+              "eyebrows chill",
+              "eyes closed",
+              "bubble shirt",
+              "bubble on",
+            ]);
+            text.innerHTML = "I'm a Badminton <br> Champion";
+
+          }
+        });
+      document
+        .querySelector("#guitar")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyebrows none",
+              "eyes default",
+   
+            ]);
+            text.innerHTML = "I Am  <br> Feeling Good";
+
+          }
+        });
+      document
+        .querySelector("#certificates")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "hands up both",
+              "mouth uwu default",
+              "eyebrows chill",
+              "eyes closed",
+              "bubble shirt",
+              "bubble on",
+            ]);
+            text.innerHTML = "Check my <br> Certificates";
+
+          }
+        });
+      document
+        .querySelector("#certificates")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyebrows none",
+              "eyes default",
+   
+            ]);
+            text.innerHTML = "I Am  <br> Feeling Good";
+
+          }
+        });
+      document
+        .querySelector("#shelf")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "hand right old",
+              "mouth shocked",
+              "eyes uwu",
+              "eyebrows chill",
+              "bubble shirt",
+              "bubble on",
+            ]);
+            text.innerHTML = "Contact Me <br> For More Info"; 
+
+          }
+        });
+      document
+        .querySelector("#shelf")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyes default",
+              "eyebrows none",
+        
+            ]);
+            text.innerHTML = "Want to  <br> contact me";
+
+          }
+        });
+      window.addEventListener("keypress", function (e) {
+        if (r) {
+          if (e.key === " ") {
+            r.play([
+              "jump small",
+              "spark bottom",
+              "spark on",
+              "hands down both",
+            ]);
+            setTimeout(() => {
+              r.play(["no hands transition"]);
+            }, 500);
+          }
+        }
+      });
+      document.querySelector("#certificates").addEventListener("click", function () {
+        gsap.to("#workdiv", {
+          top: "0%",
+          duration: 0.5,
+          borderRadius: "0%",
+        });
+        gsap.to("#colorchange",{
+          display:"none"
+        })
+        
+        r.play(["masked load","bubble off"]);
+        text.style.display = "none"
+        gsap.to("#canvas", {
+          bottom: "-10%",
+          scale: 1,
+          duration: 0.5,
+        });
+      });
+
+      document.querySelector("#close").addEventListener("click", function () {
+        gsap.to("#workdiv", {
+          top: "100%",
+          duration: 0.5,
+          borderRadius: "50%",
+        });
+        gsap.to("#colorchange",{
+          display:"initial"
+        })
+        r.play(["masked off","bubble on"]);
+        text.style.display = "initial"
+
+        gsap.to("#canvas", {
+          bottom: "10%",
+          scale: 1,
+          duration: 0.5,
+        });
+      });
+
+      const animations = [
+        ["shirt rive", "spark center", "spark on", "idle bounce"],
+        ["shirt nintendo", "spark center", "spark on", "idle bounce"],
+        ["shirt default", "spark center", "spark on", "idle bounce"],
+        ["shirt polo", "spark center", "spark on", "idle bounce"],
+        ["shirt vercel", "spark center", "spark on", "idle bounce"],
+      ];
+      let currentIndex = 0;
+
+      document
+        .querySelector("#colorchange")
+        .addEventListener("click", function () {
+          r.play(animations[currentIndex]);
+          currentIndex = (currentIndex + 1) % animations.length; // Cycle through animations
+        });
+      document
+        .querySelector("#colorchange")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "bubble on",
+              "bubble shirt",
+              "eyebrows chill",
+              "eyes happy",
+              "mouth big smile",
+              "spark center",
+              "spark on",
+            ]);
+            text.innerHTML = "Click me to <br> change my shirt";
+
+          }
+        });
+      document
+        .querySelector("#colorchange")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyes default",
+              "eyebrows none",
+
+            ]);
+            text.innerHTML = "I Am  <br> Feeling Good";
+
+          }
+        });
+    </script>
+  </body>
+</html>
