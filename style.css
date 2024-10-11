@@ -8,7 +8,9 @@
     line-height: 12vw;
     color: #EF99B1;
 }
-
+*::selection{
+  background-color: transparent;
+}
 .center{
   display: flex;
   justify-content: center;

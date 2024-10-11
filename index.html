@@ -30,7 +30,11 @@
     </svg>
   </div> -->
   <body>
-    <audio src="./kk.mp3" autoplay loop></audio>
+    <div id="audio-control" class="w-16 h-16 bg-white text-3xl rounded-full absolute right-5 z-[99] bottom-5 center">
+      <i id="audio-icon" class="ri-volume-up-fill"></i>
+    </div>
+    <audio id="background-audio" src="./kk.mp3" loop></audio>
+    
     <div
       class="w-full h-[100vh] overflow-hidden relative flex flex-col items-center text-center justify-center bg-[#FFDDE6]"
     >
@@ -65,15 +69,21 @@
       </div>
       <div id="table" class="  ">
         <img
-          class="absolute bottom-[6%] left-[10%] w-[30%]"
+          class="absolute bottom-[6%] left-[10%] w-[28%]"
           src="./IMG_7889.PNG"
           alt=""
         />
       </div>
       <img
         id="guitar"
-        class="absolute bottom-[6%] right-[14%] w-[25%]"
-        src="./IMG_7890.PNG"
+        class="absolute bottom-[6%] right-[18%]  w-[25%]"
+        src="./L ll.png"
+        alt=""
+      />
+      <img
+        id="music"
+        class="absolute bottom-[11%] right-[14%] w-[12%]"
+        src="./Extracurriculars (2).gif"
         alt=""
       />
       <img
@@ -95,7 +105,7 @@
       </div>
       <div
         id="workdiv"
-        class="w-full h-full overflow-x-hidden  absolute z-9 gap-2 rounded-tr-[50%] rounded-tl-[50%] top-[100%] overflow-scroll p-10 bg-[#EF99B1]"
+        class="w-full h-full overflow-x-hidden pb-44  absolute z-9 gap-2 rounded-tr-[50%] rounded-tl-[50%] top-[100%] overflow-scroll p-10 bg-[#EF99B1]"
       >
         <div
           id="close"
@@ -179,6 +189,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById("background-audio");
+    var audioControl = document.getElementById("audio-control");
+    var audioIcon = document.getElementById("audio-icon");
+
+    audioControl.addEventListener("click", function () {
+      if (audio.paused) {
+        audio.play();
+        audioIcon.classList.remove("ri-volume-mute-fill");
+        audioIcon.classList.add("ri-volume-up-fill");
+      } else {
+        audio.pause();
+        audioIcon.classList.remove("ri-volume-up-fill");
+        audioIcon.classList.add("ri-volume-mute-fill");
+      }
+    });
+  });
       var r; // Define `r` in a higher scope to make it accessible in both event listeners
       var text = document.getElementById("text");
       document.addEventListener("DOMContentLoaded", (event) => {
@@ -260,6 +287,36 @@
             
             ]);
             text.innerHTML = "Tell me <br> About Yourself";
+
+          }
+        });
+      document
+        .querySelector("#music")
+        .addEventListener("mouseover", function () {
+          if (r) {
+            r.play([
+              "hands up both",
+              "mouth big smile",
+              "eyebrows chill",
+              "bubble shirt",
+              "bubble on",
+            ]);
+            text.innerHTML = "Sound is  <br> Crazy Right";
+
+
+          }
+        });
+      document
+        .querySelector("#music")
+        .addEventListener("mouseleave", function () {
+          if (r) {
+            r.play([
+              "no hands transition",
+              "mouth default",
+              "eyebrows none",
+            
+            ]);
+            text.innerHTML = "How are you <br> feeling";
 
           }
         });
