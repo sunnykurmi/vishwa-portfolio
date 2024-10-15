@@ -1,3 +1,6 @@
+window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+  });
 
 document.addEventListener("DOMContentLoaded", function () {
 var audio = document.getElementById("background-audio");
@@ -192,8 +195,10 @@ document
 
     }
   });
+
+
 document
-  .querySelector("#shelf")
+  .querySelector("#linkedin")
   .addEventListener("mouseover", function () {
     if (r) {
       r.play([
@@ -204,12 +209,12 @@ document
         "bubble shirt",
         "bubble on",
       ]);
-      text.innerHTML = "Contact Me <br> For More Info"; 
+      text.innerHTML = "Contact Me "; 
 
     }
   });
 document
-  .querySelector("#shelf")
+  .querySelector("#linkedin")
   .addEventListener("mouseleave", function () {
     if (r) {
       r.play([
@@ -223,6 +228,76 @@ document
 
     }
   });
+
+
+  document
+  .querySelector("#youtube")
+  .addEventListener("mouseover", function () {
+    if (r) {
+      r.play([
+        "hand right old",
+        "mouth shocked",
+        "eyes uwu",
+        "eyebrows chill",
+        "bubble shirt",
+        "bubble on",
+      ]);
+      text.innerHTML = "Comming Soon "; 
+
+    }
+  });
+document
+  .querySelector("#youtube")
+  .addEventListener("mouseleave", function () {
+    if (r) {
+      r.play([
+        "no hands transition",
+        "mouth default",
+        "eyes default",
+        "eyebrows none",
+  
+      ]);
+      text.innerHTML = "I'm Feeling  <br> Happy Today";
+
+    }
+  });
+
+
+  document
+  .querySelector("#insta")
+  .addEventListener("mouseover", function () {
+    if (r) {
+      r.play([
+        "hand right old",
+        "mouth shocked",
+        "eyes uwu",
+        "eyebrows chill",
+        "bubble shirt",
+        "bubble on",
+      ]);
+      text.innerHTML = "Follow me <br> on Instagram"; 
+
+    }
+  });
+document
+  .querySelector("#insta")
+  .addEventListener("mouseleave", function () {
+    if (r) {
+      r.play([
+        "no hands transition",
+        "mouth default",
+        "eyes default",
+        "eyebrows none",
+  
+      ]);
+      text.innerHTML = "I'm Feeling  <br> Happy Today";
+
+    }
+  });
+
+
+
+  
 window.addEventListener("keypress", function (e) {
   if (r) {
     if (e.key === " ") {
@@ -288,7 +363,7 @@ document.querySelector("#table").addEventListener("click", function () {
       display:"none"
     })
     
-    r.play(["masked load","bubble off"]);
+    r.play(["masked on","bubble off"]);
     text.style.display = "none"
     gsap.to("#canvas", {
       bottom: "-10%",
@@ -368,8 +443,3 @@ document
     }
   });
 
-  document.querySelector('body').addEventListener('mousemove',function(dets){
-    document.querySelector('.circle').style.left = `${dets.clientX}px`
-    document.querySelector('.circle').style.top = `${dets.clientY}px`
-})
-  
