@@ -16,6 +16,9 @@
   justify-content: center;
   align-items: center;
 }
+.circle{
+  transition: all linear 0.2s;
+}
 
 
 @keyframes tilt {
@@ -37,10 +40,9 @@
   #frame:hover .tilt-animation {
     animation: tilt 0.6s ease-in-out;
   }
-
-
-  
-
+  #certificates:hover .tilt-animation {
+    animation: tilt 0.6s ease-in-out;
+  }
 
 .circle {
   stroke-dasharray: 2000;
