@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .to(".image-rotate", {
         opacity: 1,
         scale: 1,
+        delay:-.8,
         duration: 1,
         ease: "power1.out"
       }, "-=0.5") // Overlap with the previous animation
