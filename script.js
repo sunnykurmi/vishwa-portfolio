@@ -333,6 +333,10 @@ document.querySelector("#certificates").addEventListener("click", function () {
     display:"none",
     opacity:0
   })
+  gsap.to("#line",{
+    // display:"none",
+    opacity:0
+  })
   
   
   r.play(["masked on","bubble off"]);
@@ -356,6 +360,10 @@ document.querySelector("#close").addEventListener("click", function () {
 })
 gsap.to("#table",{
     display:"initial",
+    opacity:1
+  })
+gsap.to("#line",{
+    // display:"initial",
     opacity:1
   })
   r.play(["masked off","bubble on"]);
@@ -383,6 +391,10 @@ document.querySelector("#table").addEventListener("click", function () {
         display:"none",
         opacity:0
       })
+    gsap.to("#line",{
+        // display:"none",
+        opacity:0
+      })
     
     r.play(["masked on","bubble off"]);
 
@@ -407,6 +419,10 @@ document.querySelector("#table").addEventListener("click", function () {
     })
     gsap.to("#table",{
         display:"initial",
+        opacity:1
+      })
+    gsap.to("#line",{
+        // display:"initial",
         opacity:1
       })
 

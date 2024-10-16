@@ -39,7 +39,7 @@
     <audio id="background-audio" src="./kk.mp3" loop autoplay></audio>
     
     <div
-      class="w-full h-[100vh] overflow-hidden relative flex flex-col items-center text-center justify-center bg-[#FEE0EA]"
+      class="w-full h-[100vh] overflow-hidden relative flex flex-col items-center  justify-center bg-[#FEE0EA]"
     >
       <p
         class="text text-[7vw] leading-3 font-bold translate-y-[-15vh] text-[#EF99B1] max-[600px]:text-[12vw] "
@@ -49,28 +49,28 @@
       <p class="text text-[5vw] font-bold translate-y-[-16vh] text-[#EF99B1] max-[600px]:text-[10vw] max-[600px]:translate-y-[-13vh]">
         VENKATA SAI VISWANADH
       </p>
-      <div class="fixed bottom-[10.5vh] z-[999] max-[600px]:bottom-[0vh] " >
+      <div class="fixed  bottom-[10.5vh] z-[999] max-[600px]:bottom-[11vh]  " >
         <div
-        class="w-full mt-2 max-[600px]:mt-28  h-20 z-[9999]  absolute flex items-center justify-center text-center text-xl max-[600px]:text-2xl font-bold "
+        class="w-full mt-2  h-20 z-[9999]  text-center absolute flex items-center justify-center  text-xl max-[600px]:text-xl font-bold "
       >
         <p id="text">Hello</p>
       </div>
         <canvas
-          class=" brightness-[1.1] contrast-[2] max-[600px]:scale-[.65] "
+          class=" brightness-[1.1] contrast-[2] h-[50vh] w-[50vh] max-[600px]:h-[40vh] max-[600px]:w-[40vh] "
           id="canvas"
-          width="300"
-          height="300"
+          
         >
         </canvas>
+              <!-- line -->
+      <div id="line" class="w-[80vw] translate-x-[-50%] left-[50%] h-1 bg-[#00000038] absolute  max-[600px]:w-[100vw]"></div>
+      <!-- line -->
       </div>
       <div
         id="colorchange"
         class="fixed h-20 w-20 bottom-40 rounded-full z-[9999] cursor-pointer"
       ></div>
 
-      <!-- line -->
-      <div class="w-[80%] h-1 bg-[#0000003d] bottom-[10.5vh] absolute max-[600px]:w-full"></div>
-      <!-- line -->
+
 
       <div id="frame" class="">
         <a href="profile.html">
@@ -83,7 +83,7 @@
       </div>
       <div id="table" class=" bg-black  ">
         <img
-          class="absolute bottom-[11vh] max-[600px]:z-[9999] left-[10%] w-[30%] max-[600px]:w-[50%]   max-[600px]:left-[-10%] "
+          class="absolute bottom-[10.5vh] max-[600px]:z-[9999] left-[10%] w-[30%] max-[600px]:w-[50%]   max-[600px]:left-[-10%] "
           src="./IMG_7889.PNG"
           alt=""
         />
@@ -96,7 +96,7 @@
       />
       <img
         id="music"
-        class="absolute bottom-[11%] right-[14%] w-[12%] max-[600px]:w-[27%] max-[600px]:right-[2%] "
+        class="absolute bottom-[10.5vh] right-[14%] w-[12%] max-[600px]:w-[27%] max-[600px]:right-[2%] "
         src="./Extracurriculars (2).gif"
         alt=""
       />
@@ -222,9 +222,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/badminton.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit " >
-          <p class="text-5xl font-semibold  max-[600px]:text-3xl max-[600px]:text-center">Badminton Champion</p>
-          <p class="text-2xl font-medium opacity-70 text-justify max-[600px]:text-lg " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit " >
+          <p class="text-5xl font-semibold  max-[600px]:text-xl ">Badminton Champion</p>
+          <p class="text-2xl font-medium max-[600px]:text-sm opacity-70 text-justify max-[600px]:text-lg " >
             <br> • Won several championships through competitive participation.
              <br> • Developed resilience, discipline, and a strong competitive edge.
              <br> • Learned the value of teamwork, applicable in both personal and professional life.
@@ -234,9 +234,9 @@
 
 
        <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Student Body President</p>
-          <p class="text-2xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-xl ">Student Body President</p>
+          <p class="text-2xl font-medium max-[600px]:text-sm opacity-70 text-justify " >
             <br> • Represented the student community and advocated for their needs.
             <br> • Organized initiatives to promote inclusivity and engagement.
             <br> • Strengthened leadership, communication, and organizational skills.
@@ -251,9 +251,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/ssr.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-3xl font-semibold">Internship in Business Management and Marketing (SSR Concrete)</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-3xl font-semibold max-[600px]:text-xl  ">Internship in Business Management and Marketing (SSR Concrete)</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
              <br> • Worked in the Business Management and Marketing Strategies department.
              <br> • Conducted market research and created marketing campaigns.
              <br> • Formulated business strategies and performed data analysis.
@@ -262,9 +262,9 @@
        </div>
 
        <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-3xl font-semibold">Internship in Business Management and Marketing (Vishwa Samudra Engineering)</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-3xl font-semibold max-[600px]:text-xl  ">Internship in Business Management and Marketing (Vishwa Samudra Engineering)</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
             <br> • Collaborated with senior management on advanced marketing techniques and business development strategies.
             <br> • Conducted market segmentation and performance analysis.
             <br> • Contributed to key strategic decisions that supported company growth.
@@ -281,9 +281,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/vikra foundation.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Volunteer at Vikara Foundation</p>
-          <p class="text-2xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-xl ">Volunteer at Vikara Foundation</p>
+          <p class="text-2xl font-medium max-[600px]:text-sm opacity-70 text-justify " >
            <br> • Contributed to feeding the homeless and teaching students in schools with irregular teachers.
            <br> • Provided educational support to underprivileged children, ensuring continuity in their learning.
            <br> • Strengthened my commitment to community service and social impact.
@@ -292,9 +292,9 @@
        </div>
 
        <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Director of Operations at Project Sarama</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-xl ">Director of Operations at Project Sarama</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
             <br> • Led an initiative to protect street dogs by fitting reflective collars to prevent nighttime accidents.
             <br> • Helped protect over 600 dogs through the project.
             <br> • Organized a 25-day campaign across 25 cities, fitting 150 dogs with reflective collars.
@@ -312,9 +312,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/research paper social media.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-3xl font-semibold">Research Paper Author – “Influence of Social Media Influencers on Consumer Purchasing Behavior”</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-3xl font-semibold max-[600px]:text-xl  ">Research Paper Author – “Influence of Social Media Influencers on Consumer Purchasing Behavior”</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
             <br> •  <span class="font-bold">Title:</span>  “Influence of Social Media Influencers on Consumer Purchasing Behavior.”
             <br> • Published in a journal with an impact factor of 9.24.
             <br> • Explores the role of social media influencers in shaping consumer decisions and purchasing trends.
@@ -324,9 +324,9 @@
        </div>
 
        <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-3xl font-semibold">Research Paper Author – “Investigating the Influence of Microplastics on Marine Biodiversity and Human Health”</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-3xl font-semibold max-[600px]:text-xl  ">Research Paper Author – “Investigating the Influence of Microplastics on Marine Biodiversity and Human Health”</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
             <br> •  <span class="font-black"> Title:</span> “Investigating the Influence of Microplastics on Marine Biodiversity and Human Health.”
             <br> • Published in a journal with an impact factor of 9.24.
             <br> • Highlights the harmful effects of microplastics on marine ecosystems and human health.
@@ -344,9 +344,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/boosted asia.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Co-founder and COO at Boosted Asia</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-xl ">Co-founder and COO at Boosted Asia</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
             <br> • Leading a movement to empower 1 million students with personalized roadmaps.
             <br> • Working to dismantle outdated examination systems and ignite community passion.
             <br> • Aiming to help students realize their dreams and unlock their full potential.
@@ -355,9 +355,9 @@
        </div>
 
        <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Peer Tutor in Mathematics</p>
-          <p class="text-2xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-xl ">Peer Tutor in Mathematics</p>
+          <p class="text-2xl font-medium max-[600px]:text-sm opacity-70 text-justify " >
             <br>• Assisted fellow students with challenging math concepts and improved their problem-solving skills.
             <br>• Enhanced communication and teaching abilities through peer tutoring.
             <br>• Fostered a collaborative and supportive learning environment for academic growth.     
@@ -374,9 +374,9 @@
         <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/amity summer.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
-          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Summer School at Amity University (Marketing and Sales)</p>
-          <p class="text-xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col  justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-xl ">Summer School at Amity University (Marketing and Sales)</p>
+          <p class="text-xl max-[600px]:text-sm font-medium opacity-70 text-justify " >
            <br> • Specialized in Marketing and Sales, gaining a solid foundation in marketing strategies and consumer behavior analysis.
            <br> • Acquired knowledge of effective sales techniques through practical learning experiences.
            <br> • Equipped with essential skills for success in the business world.          
