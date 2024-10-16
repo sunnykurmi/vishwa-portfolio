@@ -29,9 +29,15 @@ if (audio.paused) {
 gsap.timeline()
     .to(".circle", {
       strokeDashoffset: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1.out"
-    })
+    },"s")
+    .to(".text-appear", {
+      opacity: 1,
+      duration: 1,
+      delay: 1,
+      ease: "power1.out"
+    },"s") // Overlap with the previous animation
     .to(".image-rotate", {
       opacity: 1,
       scale: 1,
@@ -42,11 +48,6 @@ gsap.timeline()
       opacity: 1,
       scale: 1,
       rotate: 90,
-      duration: 1,
-      ease: "power1.out"
-    }, "-=0.5") // Overlap with the previous animation
-    .to(".text-appear", {
-      opacity: 1,
       duration: 1,
       ease: "power1.out"
     }, "-=0.5") // Overlap with the previous animation
