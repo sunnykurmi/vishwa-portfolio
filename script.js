@@ -24,57 +24,66 @@ if (audio.paused) {
 });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the animation has been shown
+  if (!sessionStorage.getItem("animationShown")) {
+    // Run the GSAP animation
+    gsap.timeline()
+      .to(".circle", {
+        strokeDashoffset: 0,
+        duration: 3,
+        ease: "power1.out"
+      }, "s")
+      .to(".text-appear", {
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: "power1.out"
+      }, "s") // Overlap with the previous animation
+      .to(".image-rotate", {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power1.out"
+      }, "-=0.5") // Overlap with the previous animation
+      .to(".image-normal", {
+        opacity: 1,
+        scale: 1,
+        rotate: 90,
+        duration: 1,
+        ease: "power1.out"
+      }, "-=0.5") // Overlap with the previous animation
+      .to("#loaderparent", {
+        y: "-100%",
+        duration: 1,
+        delay: 1,
+        backgroundColor: "#FEE0EA",
+      }, "-=0.5")
+      .fromTo("#canvas", {
+        opacity: 0,
+      }, {
+        opacity: 1,
+        delay: 0.2
+      }, "-=1")
+      .fromTo("#text", {
+        opacity: 0,
+      }, {
+        opacity: 1,
+        delay: 0.2
+      }, "-=1");
 
-/////////////loader//////////////
-gsap.timeline()
-    .to(".circle", {
-      strokeDashoffset: 0,
-      duration: 2.5,
-      ease: "power1.out"
-    },"s")
-    .to(".text-appear", {
-      opacity: 1,
-      duration: 1,
-      delay: 1,
-      ease: "power1.out"
-    },"s") // Overlap with the previous animation
-    .to(".image-rotate", {
-      opacity: 1,
-      scale: 1,
-      duration: 1,
-      ease: "power1.out"
-    }, "-=0.5") // Overlap with the previous animation
-    .to(".image-normal", {
-      opacity: 1,
-      scale: 1,
-      rotate: 90,
-      duration: 1,
-      ease: "power1.out"
-    }, "-=0.5") // Overlap with the previous animation
-  
-    .to("#loaderparent",{
-      y:"-100%",
-      // opacity:0,
-      duration:1,
-      backgroundColor:"#FEE0EA",
-    },"-=0.5")
-    .fromTo("#canvas",{
-      opacity:0,
-    },{
-      opacity:1,
-      delay:.2
-    }, "-=1")
-    .fromTo("#text",{
-      opacity:0,
-    },{
-      opacity:1,
-      delay:.2
-    }, "-=1")
+    // Set the flag in sessionStorage
+    sessionStorage.setItem("animationShown", "true");
+  } else {
+    // Skip the animation
+    document.getElementById("loaderparent").style.display = "none";
+    document.getElementById("canvas").style.opacity = 1;
+    document.getElementById("text").style.opacity = 1;
+  }
+});
 
-
-
-
-
+var r; // Define `r` in a higher scope to make it accessible in both event listeners
+var text = document.getElementById("text");
 
 
 
