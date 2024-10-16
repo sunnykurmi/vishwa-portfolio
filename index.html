@@ -16,20 +16,30 @@
       rel="stylesheet"
     />
   </head>
-  <!-- <div class="fixed center top-0 left-0 h-screen w-full bg-black z-[99999]">
-    <svg class="w-full h-full center  ">
-      <circle
-        class="circle"
-        cx="50%"
-        cy="50%"
-        r="25%"
-        stroke="#231f20"
-        stroke-width="3"
-        fill-opacity="0"
-      />
-    </svg>
-  </div> -->
   <body>
+    <div id="loaderparent" class="fixed center top-0 left-0 h-screen w-full bg-[#151515] z-[99]">
+      <svg class="w-full h-full center -rotate-90 ">
+          <circle
+              class="circle"
+              cx="50%"
+              cy="50%"
+              r="25%"
+              stroke="#A2A2A2"
+              stroke-width="2"
+              fill-opacity="0"
+              
+          />
+      </svg>
+      <div class="w-full h-full flex items-center justify-center absolute z-[999] top-0 left-0">
+          <img class="image-rotate w-[80vh] h-[80vh] " src="./Untitled design.png" alt="">
+      </div>
+      <div class="w-full h-full flex items-center justify-center absolute z-[999] top-0 left-0">
+          <img class="image-normal w-[80vh] h-[80vh] " src="./Untitled design.png" alt="">
+      </div>
+      <h1 class="text-appear absolute -translate-x-1/2 -translate-y-1/2 z-[999] top-1/2 left-1/2 text-3xl text-zinc-400">Welcome to the world of </h1>
+  </div>
+
+
     <div id="loader">
       <div class="loader-icon"></div>
     </div>

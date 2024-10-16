@@ -23,6 +23,60 @@ if (audio.paused) {
 }
 });
 });
+
+
+/////////////loader//////////////
+gsap.timeline()
+    .to(".circle", {
+      strokeDashoffset: 0,
+      duration: 2,
+      ease: "power1.out"
+    })
+    .to(".image-rotate", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "power1.out"
+    }, "-=0.5") // Overlap with the previous animation
+    .to(".image-normal", {
+      opacity: 1,
+      scale: 1,
+      rotate: 90,
+      duration: 1,
+      ease: "power1.out"
+    }, "-=0.5") // Overlap with the previous animation
+    .to(".text-appear", {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.out"
+    }, "-=0.5") // Overlap with the previous animation
+  
+    .to("#loaderparent",{
+      y:"-100%",
+      // opacity:0,
+      duration:1,
+      backgroundColor:"#FEE0EA",
+    },"-=0.5")
+    .fromTo("#canvas",{
+      opacity:0,
+    },{
+      opacity:1,
+      delay:.2
+    }, "-=1")
+    .fromTo("#text",{
+      opacity:0,
+    },{
+      opacity:1,
+      delay:.2
+    }, "-=1")
+
+
+
+
+
+
+
+
 var r; // Define `r` in a higher scope to make it accessible in both event listeners
 var text = document.getElementById("text");
 var table = document.getElementById("table");
