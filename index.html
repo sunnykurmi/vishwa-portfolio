@@ -33,25 +33,25 @@
     <div id="loader">
       <div class="loader-icon"></div>
     </div>
-    <div id="audio-control" class="w-16 h-16 bg-white text-3xl rounded-full absolute right-5 z-[99] bottom-5 center">
-      <i id="audio-icon" class="ri-volume-up-fill"></i>
+    <div id="audio-control" class="w-16 h-16 bg-white text-3xl rounded-full fixed right-5 z-[99] bottom-5 center">
+      <i id="audio-icon" class="ri-volume-mute-fill"></i>
     </div>
-    <audio id="background-audio" src="./kk.mp3" loop></audio>
+    <audio id="background-audio" src="./kk.mp3" loop autoplay></audio>
     
     <div
       class="w-full h-[100vh] overflow-hidden relative flex flex-col items-center text-center justify-center bg-[#FEE0EA]"
     >
       <p
-        class="text text-[7vw] leading-3 font-bold translate-y-[-15vh] text-[#EF99B1] max-[600px]:text-[12vw] max-[600px]:translate-y-[-27vh]"
+        class="text text-[7vw] leading-3 font-bold translate-y-[-15vh] text-[#EF99B1] max-[600px]:text-[12vw] "
       >
         ANNABATHUNI
       </p>
-      <p class="text text-[5vw] font-bold translate-y-[-16vh] text-[#EF99B1] max-[600px]:text-[10vw] max-[600px]:translate-y-[-25vh]">
+      <p class="text text-[5vw] font-bold translate-y-[-16vh] text-[#EF99B1] max-[600px]:text-[10vw] max-[600px]:translate-y-[-13vh]">
         VENKATA SAI VISWANADH
       </p>
       <div class="fixed bottom-[10.5vh] z-[999] max-[600px]:bottom-[0vh] " >
         <div
-        class="w-full mt-2 max-[600px]:mt-28  h-20 z-[99999]  absolute flex items-center justify-center text-center text-xl max-[600px]:text-3xl font-bold "
+        class="w-full mt-2 max-[600px]:mt-28  h-20 z-[9999]  absolute flex items-center justify-center text-center text-xl max-[600px]:text-2xl font-bold "
       >
         <p id="text">Hello</p>
       </div>
@@ -67,26 +67,30 @@
         id="colorchange"
         class="fixed h-20 w-20 bottom-40 rounded-full z-[9999] cursor-pointer"
       ></div>
-      <div class="w-[80%] h-1 bg-[#0000003d] bottom-[10.5vh] absolute"></div>
+
+      <!-- line -->
+      <div class="w-[80%] h-1 bg-[#0000003d] bottom-[10.5vh] absolute max-[600px]:w-full"></div>
+      <!-- line -->
+
       <div id="frame" class="">
         <a href="profile.html">
           <img
-            class="absolute top-[12%] left-[10%] w-[20%] max-[600px]:w-[40%] max-[600px]:top-[2%] max-[600px]:left-[2%] tilt-animation"
+            class="absolute top-[12%] left-[12%] w-[12%] max-[600px]:w-[30%]  max-[600px]:left-[2%] tilt-animation"
             src="./IMG_7888.PNG"
             alt=""
           />
         </a>
       </div>
-      <div id="table" class="  ">
+      <div id="table" class=" bg-black  ">
         <img
-          class="absolute bottom-[7.5vh] left-[10%] w-[30%] max-[600px]:w-[50%]  max-[600px]:bottom-[9vh] max-[600px]:left-[-10%] "
+          class="absolute bottom-[11vh] max-[600px]:z-[9999] left-[10%] w-[30%] max-[600px]:w-[50%]   max-[600px]:left-[-10%] "
           src="./IMG_7889.PNG"
           alt=""
         />
       </div>
       <img
         id="guitar"
-        class="absolute bottom-[6%] right-[18%]  w-[25%] max-[600px]:w-[70%] max-[600px]:right-[-20%]  max-[600px]:bottom-[40%]"
+        class="absolute bottom-[6%] right-[18%]  w-[25%] max-[600px]:w-[70%] max-[600px]:right-[-25%]  max-[600px]:bottom-[33%] "
         src="./L ll.png"
         alt=""
       />
@@ -97,7 +101,7 @@
         alt=""
       />
       <div
-      class="absolute  top-[5%] center right-[10%] w-[15%] max-[600px]:w-[40%]">
+      class="absolute  top-[5%] center right-[10%] w-[15%] max-[600px]:w-[40%] max-[600px]:right-0  max-[600px]:top-4">
       <div class=" absolute justify-evenly  w-full h-16 center">
         <div id="linkedin" class="w-[30%] h-full  "></div>
         <div id="youtube" class="w-[30%] h-full "></div>
@@ -114,7 +118,7 @@
       </div>
       <img
         id="certificates"
-        class="absolute top-[20%] right-[5%] w-[18%] tilt-animation"
+        class="absolute top-[20%]  right-[5%] w-[18%] tilt-animation max-[600px]:w-[40%] max-[600px]:top-28 max-[600px]:right-0"
         src="./IMG_7887.PNG"
         alt=""
       />
@@ -125,13 +129,13 @@
       >
         <div
           id="close"
-          class="h-10 w-10 bg-white text-black text-2xl flex items-center justify-center rounded-full"
+          class="h-10 w-10 cursor-pointer bg-white text-black text-2xl flex items-center justify-center rounded-full"
         >
           <i class="ri-close-line"></i>
         </div>
         <br />
-        <div class="w-full grid grid-cols-3 gap-3">
-          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+        <div class="w-full grid grid-cols-3 gap-3 max-[600px]:grid-cols-1">
+          <div class="h-[20vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[60vw] overflow-hidden">
             <img
               loop
               autoplay
@@ -140,7 +144,7 @@
               src="./certificates/AUSS2024 CERTIFICATE _page-0001.jpg"
             ></img>
           </div>
-          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+          <div class="h-[20vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[60vw] overflow-hidden">
             <img
               loop
               autoplay
@@ -149,7 +153,7 @@
               src="./certificates/BADMINTON ALLEN _page-0001.jpg"
             ></img>
           </div>
-          <div class="h-[50vh] rounded-xl w-[65vh] overflow-hidden">
+          <div class="h-[20vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[60vw] overflow-hidden">
             <img
               loop
               autoplay
@@ -159,7 +163,7 @@
             ></img>
           </div>
           <div class="flex flex-col gap-3">
-            <div class="h-[49vh] rounded-xl w-[65vh] overflow-hidden">
+            <div class="h-[20vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[60vw] overflow-hidden">
               <img
                 loop
                 autoplay
@@ -168,7 +172,7 @@
                 src="./certificates/SBP ALLEN_page-0001.jpg"
               ></img>
             </div>
-            <div class="h-[49vh] rounded-xl w-[65vh] overflow-hidden">
+            <div class="h-[20vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[60vw] overflow-hidden">
               <img
               loop
               autoplay
@@ -178,7 +182,7 @@
             ></img>
           </div>
           </div>
-          <div class="h-[100vh] rounded-xl w-[65vh] overflow-hidden">
+          <div class="h-[40vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[120vw] overflow-hidden">
             <img
               loop
               autoplay
@@ -187,7 +191,7 @@
               src="./certificates/SSR CONCRETE INTERNSHIP CERTIFICATE _page-0001.jpg"
             ></img>
           </div>
-          <div class="h-[100vh] rounded-xl w-[65vh] overflow-hidden">
+          <div class="h-[40vw] rounded-xl w-[30vw] max-[600px]:w-full max-[600px]:h-[120vw] overflow-hidden">
             <img
               loop
               autoplay
@@ -211,16 +215,16 @@
           <i class="ri-close-line"></i>
         </div>
 
-       <div class=" text center text-6xl uppercase  ">
+       <div class=" text center text-6xl uppercase max-[600px]:text-4xl  ">
         MY Extracurriculars
        </div> <br><br>
-       <div class="w-full center justify-evenly text-justify ">
-        <div class="w-[40%] p-5">
+       <div class="w-full  center justify-evenly text-justify max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/badminton.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-5xl font-semibold">Badminton Champion</p>
-          <p class="text-2xl font-medium opacity-70 text-justify " >
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit " >
+          <p class="text-5xl font-semibold  max-[600px]:text-3xl max-[600px]:text-center">Badminton Champion</p>
+          <p class="text-2xl font-medium opacity-70 text-justify max-[600px]:text-lg " >
             <br> • Won several championships through competitive participation.
              <br> • Developed resilience, discipline, and a strong competitive edge.
              <br> • Learned the value of teamwork, applicable in both personal and professional life.
@@ -229,25 +233,25 @@
        </div>
 
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-5xl font-semibold">Student Body President</p>
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Student Body President</p>
           <p class="text-2xl font-medium opacity-70 text-justify " >
             <br> • Represented the student community and advocated for their needs.
             <br> • Organized initiatives to promote inclusivity and engagement.
             <br> • Strengthened leadership, communication, and organizational skills.
             <br> • Gained experience in managing teams and fostering collaboration.  </p>      </div>
-        <div class="w-[40%] p-5">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/student boy president.jpeg" alt="">
         </div>
 
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] p-5">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/ssr.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
           <p class="text-3xl font-semibold">Internship in Business Management and Marketing (SSR Concrete)</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
              <br> • Worked in the Business Management and Marketing Strategies department.
@@ -257,8 +261,8 @@
              <br> • Strengthened practical knowledge in business management and marketing.   </p>     </div>
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
           <p class="text-3xl font-semibold">Internship in Business Management and Marketing (Vishwa Samudra Engineering)</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
             <br> • Collaborated with senior management on advanced marketing techniques and business development strategies.
@@ -267,18 +271,18 @@
             <br> • Gained deeper experience in marketing and business strategy execution.     
             </p>
         </div>
-               <div class="w-[40%] p-5">
+               <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/vse internship.jpeg" alt="">
         </div>
 
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] p-5">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/vikra foundation.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-5xl font-semibold">Volunteer at Vikara Foundation</p>
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Volunteer at Vikara Foundation</p>
           <p class="text-2xl font-medium opacity-70 text-justify " >
            <br> • Contributed to feeding the homeless and teaching students in schools with irregular teachers.
            <br> • Provided educational support to underprivileged children, ensuring continuity in their learning.
@@ -287,9 +291,9 @@
           </div>
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-4xl font-semibold">Director of Operations at Project Sarama</p>
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Director of Operations at Project Sarama</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
             <br> • Led an initiative to protect street dogs by fitting reflective collars to prevent nighttime accidents.
             <br> • Helped protect over 600 dogs through the project.
@@ -298,17 +302,17 @@
           
           </p>
         </div>
-               <div class="w-[40%] p-5">
+               <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/project sarma.jpeg" alt="">
         </div>
 
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] p-5">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/research paper social media.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
           <p class="text-3xl font-semibold">Research Paper Author – “Influence of Social Media Influencers on Consumer Purchasing Behavior”</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
             <br> •  <span class="font-bold">Title:</span>  “Influence of Social Media Influencers on Consumer Purchasing Behavior.”
@@ -319,8 +323,8 @@
           </div>
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
           <p class="text-3xl font-semibold">Research Paper Author – “Investigating the Influence of Microplastics on Marine Biodiversity and Human Health”</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
             <br> •  <span class="font-black"> Title:</span> “Investigating the Influence of Microplastics on Marine Biodiversity and Human Health.”
@@ -329,19 +333,19 @@
             <br> • Contributes to the global conversation on environmental sustainability and public health.          
           </p>
         </div>
-               <div class="w-[40%] p-5">
+               <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/micro plastic.jpeg" alt="">
         </div>
 
        </div>
 
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] p-5">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/boosted asia.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-4xl font-semibold">Co-founder and COO at Boosted Asia</p>
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Co-founder and COO at Boosted Asia</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
             <br> • Leading a movement to empower 1 million students with personalized roadmaps.
             <br> • Working to dismantle outdated examination systems and ignite community passion.
@@ -350,9 +354,9 @@
           </div>
        </div>
 
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-5xl font-semibold">Peer Tutor in Mathematics</p>
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col-reverse ">
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-5xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Peer Tutor in Mathematics</p>
           <p class="text-2xl font-medium opacity-70 text-justify " >
             <br>• Assisted fellow students with challenging math concepts and improved their problem-solving skills.
             <br>• Enhanced communication and teaching abilities through peer tutoring.
@@ -361,17 +365,17 @@
           
           </p>
         </div>
-               <div class="w-[40%] p-5">
+               <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/peer tutor mathsa.jpeg" alt="">
         </div>
 
        </div>
-       <div class="w-full center justify-evenly text-justify mt-10 ">
-        <div class="w-[40%] p-5">
+       <div class="w-full center justify-evenly text-justify mt-10 max-[600px]:flex-col ">
+        <div class="w-[40%] p-5 max-[600px]:w-full">
           <img class="rounded-xl" src="./ecs/amity summer.jpeg" alt="">
         </div>
-        <div class="w-[40%] h-[45vh]  flex flex-col text-start justify-start items-start">
-          <p class="text-4xl font-semibold">Summer School at Amity University (Marketing and Sales)</p>
+        <div class="w-[40%] h-[45vh]  flex flex-col text-center justify-center items-start max-[600px]:w-full max-[600px]:h-fit">
+          <p class="text-4xl font-semibold max-[600px]:text-3xl max-[600px]:text-center">Summer School at Amity University (Marketing and Sales)</p>
           <p class="text-xl font-medium opacity-70 text-justify " >
            <br> • Specialized in Marketing and Sales, gaining a solid foundation in marketing strategies and consumer behavior analysis.
            <br> • Acquired knowledge of effective sales techniques through practical learning experiences.

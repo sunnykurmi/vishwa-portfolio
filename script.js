@@ -2,6 +2,10 @@ window.addEventListener('load', function() {
     document.getElementById('loader').style.display = 'none';
   });
 
+  window.addEventListener("resize", function () {
+    location.reload();
+  });   
+
 document.addEventListener("DOMContentLoaded", function () {
 var audio = document.getElementById("background-audio");
 var audioControl = document.getElementById("audio-control");
@@ -21,6 +25,7 @@ if (audio.paused) {
 });
 var r; // Define `r` in a higher scope to make it accessible in both event listeners
 var text = document.getElementById("text");
+var table = document.getElementById("table");
 document.addEventListener("DOMContentLoaded", (event) => {
   r = new rive.Rive({
     src: "./cat.riv",
@@ -313,6 +318,8 @@ window.addEventListener("keypress", function (e) {
     }
   }
 });
+
+
 document.querySelector("#certificates").addEventListener("click", function () {
   gsap.to("#workdiv", {
     top: "0%",
@@ -322,14 +329,20 @@ document.querySelector("#certificates").addEventListener("click", function () {
   gsap.to("#colorchange",{
     display:"none"
   })
+  gsap.to("#table",{
+    display:"none",
+    opacity:0
+  })
   
-  r.play(["masked load","bubble off"]);
+  
+  r.play(["masked on","bubble off"]);
+
   text.style.display = "none"
+
   gsap.to("#canvas", {
-    bottom: "-10%",
-    scale: 1,
-    duration: 0.5,
-  });
+     opacity:0,
+    display:"none",
+});
 });
 
 document.querySelector("#close").addEventListener("click", function () {
@@ -339,16 +352,20 @@ document.querySelector("#close").addEventListener("click", function () {
     borderRadius: "50%",
   });
   gsap.to("#colorchange",{
-    display:"initial"
+    display:"initial",
+})
+gsap.to("#table",{
+    display:"initial",
+    opacity:1
   })
   r.play(["masked off","bubble on"]);
   text.style.display = "initial"
 
   gsap.to("#canvas", {
-    bottom: "10%",
-    scale: 1,
-    duration: 0.5,
-  });
+      
+      display:"initial",
+      opacity:1
+});
 });
 
 
@@ -362,13 +379,20 @@ document.querySelector("#table").addEventListener("click", function () {
     gsap.to("#colorchange",{
       display:"none"
     })
+    gsap.to("#table",{
+        display:"none",
+        opacity:0
+      })
     
     r.play(["masked on","bubble off"]);
+
     text.style.display = "none"
+
     gsap.to("#canvas", {
-      bottom: "-10%",
-      scale: 1,
-      duration: 0.5,
+     
+        display:"none",
+  
+        opacity:0
     });
   });
   
@@ -381,13 +405,18 @@ document.querySelector("#table").addEventListener("click", function () {
     gsap.to("#colorchange",{
       display:"initial"
     })
+    gsap.to("#table",{
+        display:"initial",
+        opacity:1
+      })
+
     r.play(["masked off","bubble on"]);
     text.style.display = "initial"
   
     gsap.to("#canvas", {
-      bottom: "10%",
-      scale: 1,
-      duration: 0.5,
+     
+        display:"initial",
+        opacity:1
     });
   });
 
